@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Images</title>
+        <style>
+            img{
+                /*object-fit: scale-down;cover,contain,fill,none,scale-down*/
+                object-position: 20% 60%;
+                float: left;
+                /*clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                top,right,bottom,left*/
+                clip-path: ellipse(45% 50%);
+                shape-outside: ellipse(45% 50%);
+               /* shape-outside: circle(50%);*/
+            }
+            div{
+                border:1px solid black;
+                background-color: antiquewhite;
+                padding: 20px;
+                width: 500px;
+                height: 500px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Attack on Titan</h2>
+        <div>
+            <img src="https://i.pinimg.com/736x/d2/4a/9f/d24a9f4d7265f0bcc9e3ce69d48006c6.jpg" width="300" height="300">
+            <p>After that interval, Mikasa was back on the battlefield and took Eren’s life with one final slash, making it as painless as possible.<br>
+
+                Then, we are transported again to Paradis Island within the walls where Eren and Armin are children.<br>
+            
+                Eren reveals his true intentions to Armin that he deliberately became an object of hate and wanted to make his friends defeat him and be hailed as heroes of the world.</p>
+        </div>
+    </body>
+</html>

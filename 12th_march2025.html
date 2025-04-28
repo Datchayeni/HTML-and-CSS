@@ -1,0 +1,38 @@
+<html>
+<title>User information form</title>
+<center>User Information Form</center>
+<body style="background-color:rgb(189, 255, 213)">
+<fieldset>
+<legend>Personal Information</legend>
+<label for="age">Your Age</label><br><br>
+<input type="number" id="age" name="age" min="18" max="50"><br><br><br>
+<label for="DOB">Your Date of Birth</label><br><br>
+<input type="date" id="DOB" name="DOB" min="1975-01-31" max="2006-12-31"><br><br><br>
+<label for="month">Your Birth month</label><br><br>
+<input type="month" id="month" name="month"><br><br><br>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Appointment Details</legend>
+<label for="time">Appointment date & time</label><br><br>
+<input type="datetime-local" id="time" name="time"><br><br><br>
+<label for="sat">Satisfaction level</label><br><br>
+<input type="range" id="sat" name="sat"><br><br><br>
+<label for="s">Search field</label><br><br>
+<input type="search" id="s" name="s"><br><br><br>
+<label for="country">Country</label><br><br>
+<select>
+<option type="placeholder">select</option>
+<option value="country">India</option>
+<option value="country">Italy</option>
+<option value="country">Spain</option>
+<option value="country">Germany</option>
+<option value="country">France</option>
+<option value="country">Japan</option>
+<option value="country">SriLanka</option>
+</select><br><br><br>
+<button type="button" onclick="alert('form submitted successfully')" autofocus>click here</button>
+<input type="reset" value="Reset">
+</fieldset>
+</body>
+</html>

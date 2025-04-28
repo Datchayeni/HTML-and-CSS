@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beach</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; 
+            }
+            .container-item{
+                border: 2px solid black;
+                padding: 30px;
+                width: 700px;
+                height: 300px;
+                overflow: hidden;
+                text-align: left;
+                background-color:cornsilk;
+            }
+            .circle img{
+                float: left;
+                clip-path: circle(50%);
+                shape-outside: circle(50%);
+            }
+            .ellipse img{
+                float: left;
+                clip-path: ellipse(50% 40%);
+                shape-outside: ellipse(50% 40%);
+            }
+            .polygon img{
+                float: left;
+                clip-path: polygon(50% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                shape-outside: polygon(50% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(165, 197, 255);">
+        <center><h1>Some Beaches around world</h1></center>
+        <h2>Lucky Bay Beach</h2>
+        <div class="container">
+            <div class="container-item">
+                    <img src="https://kieranstone.com/wp-content/uploads/2018/12/Lucky-Bay.jpg" width="200" height="200" style="float: left;">
+                <h3>Lucky Bay is a bay located on the south coast of Western Australia, in the Cape Le Grand National Park. 
+                    Located southeast of Esperance, the bay is a tourist spot known for its bright white sands and turquoise-colored waters.Matthew Flinders had sailed 
+                    into the hazardous Archipelago of the Recherche, and he found his ship surrounded by islands and rocks with nightfall coming on. He named this area 
+                    "Lucky Bay" when his vessel HMS Investigator took refuge after a summer storm
+                </h3>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <h2>Diani Beach</h2>
+        <div class="container">
+            <div class="container-item circle">
+                <img src="https://th.bing.com/th/id/OIP.TCr7DcYSAzf-xUJAYrk-YAHaEK?rs=1&pid=ImgDetMain" width="300" height="300">
+                <p><h3>Diani Beach is a beach on the Indian Ocean coast of Kenya. It is located 30 kilometres (19 mi) south of Mombasa, in Kwale County.The beach is about 
+                    17 kilometres (11 mi) long, from the Kongo river in the north to Galu beach in the south (the southern point of reference is an old Baobab tree). 
+                    Diani is a prominent tourist area of Kenya. The indigenous people of the area are the Digo, one of the nine ethnic communities of the Mijikenda. 
+                    Today the area includes Kenyans of various ethnicities who have migrated to Diani, drawn by the tourism sector</h3></p>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <h2>Railay Beach</h2>
+        <div class="container">
+            <div class="container-item ellipse">
+                <img src="https://th.bing.com/th/id/OSK.HEROPcZw3IEnpteAuDLsLq-nJEQ5KDul-W-gi2m7FHluPl3U?rs=1&pid=ImgDetMain" width="300" height="300">
+                <p><h3>Railay, also known as Rai Leh, is a small peninsula between the city of Krabi and Ao Nang in Thailand. It is accessible only by boat due to 
+                    high limestone cliffs cutting off mainland access. These cliffs attract rock climbers from all over the world, but the area is also popular due to 
+                    its beautiful beaches and quiet relaxing atmosphere. Accommodation ranges from bungalows and medium-priced resorts in East Railay to a collection of 
+                    luxury resorts focused on West Railay, though one, Royavadee, spans both waterfronts and also has a beachfront restaurant at Ao Phra Nang.</h3></p>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <h2>Zlatni Rat Beach</h2>
+        <div class="container">
+            <div class="container-item polygon">
+                <img src="https://th.bing.com/th/id/OIP.xKHc9JRfe_z1VDnQz7hFUAAAAA?rs=1&pid=ImgDetMain" width="300" height="300">
+                <p><h3>The Zlatni Rat, often referred to as the Golden Cape or Golden Horn, is a spit of land located about 2 kilometres (1 mile) west from the harbour 
+                    town of Bol on the southern coast of the Croatian island of Brač, in the region of Dalmatia. It extends southward into the Hvar Channel, a body of 
+                    water in the Adriatic Sea between the islands of Brač and Hvar, which is home to strong currents.The landform itself is mostly composed of a white 
+                    pebble beach, with a Mediterranean pine grove taking up the remainder.</h3></p>
+            </div>
+        </div>
+    </body>
+</html>

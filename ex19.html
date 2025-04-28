@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alignment</title>
+	</head>
+	<style>
+		<!--.center{
+			margin:auto;
+			text-align:center;
+			width:60%;
+			border:3px solid black;
+			padding:15px;
+		}
+		img{
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+		}
+		div{
+			border:3px solid gray;
+			padding:5px;
+		}
+		.l1{
+			float:right;
+		}
+		.l2{
+			float:right;
+		}
+		.clearfix:after{
+			content:"";
+			clear:both;
+			display:table;
+		}
+		img{
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index:-1;
+		}
+		div{
+			background-color:hotpink;
+			border:2px solid black;
+			height:70px;
+			width:50%
+			overflow:hidden,scroll,auto,visible
+		}-->
+		*{
+			box-sizing:border-box;
+		}
+		.box{
+			float:left;
+			padding:50px;
+			width:30%;
+		}
+		.flex-container{
+			display:flex;
+			flex-wrap:wrap;
+			background-color:coral;
+			gap:15px;
+			width:50%;
+			margin:8px;
+			
+			padding: 10px;
+			border-radius: 8px;
+		}
+	</style>
+	<body>
+	<!--<div class="clearfix">
+		<p class="center">Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago. This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</p><br>
+		<img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ACVHf.img?w=768&h=512&m=6&f=webp" width="50%" height="500">
+	</div>
+		<div class="clearfix">
+			<img src="https://pluspng.com/img-png/art-png-transparent-background-abstract-colors-png-transparent-image-1349.png"  height="500">
+			<p>Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago. This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</p>-->
+		<!--<p>Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago.
+		<div>
+		Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago.
+		This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</div></p>-->
+		<div class="flex-container">
+		<div class="box" style="background-color:orange">
+		Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago. This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</p>
+	</div>
+	<div class="box" style="background-color:pink">
+		Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago. This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</p>
+	</div>
+	<div class="box" style="background-color:blue">
+		Astronomers have discovered that our solar system traveled through a dense, star-forming region 
+		near Orion about 14 million years ago. This cosmic journey may have altered Earth’s environment, introducing interstellar 
+		dust that left traces in geological records. The findings offer new insight into how the galaxy’s motion influences 
+		planetary history.</p>
+	</div>
+	</div>
+	</body>
+</html>
