@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSK Fans Site</title>
+  <style>
+    body {
+      background-color: #fffde7;
+      margin: 0;
+    }
+    header {
+      background:  #f9ca24;
+      color: #1e3799;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1e3799;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: #f6e58d;
+      color: #1e3799;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #eaeaea;
+      padding: 20px;
+      border-radius: 8px solid #f9ca24;
+    }
+
+    footer {
+      background: #f9ca24;
+      color: #1e3799;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Tablet (768px - 991px) */
+    @media (max-width: 991px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav ul {
+        justify-content: space-around;
+      }
+    }
+
+    /* Mobile (<768px) */
+    @media (max-width: 767px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chennai Super Kings Fan Club</h1>
+    <p>Whistle Podu! Forever Yellow</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://www.chennaisuperkings.com/matchcentre/teamPage">Players</a></li>
+      <li><a href="https://www.iplt20.com/teams/chennai-super-kings/schedule">Match Schedule</a></li>
+      <li><a href="https://www.chennaisuperkings.com/gallery">Gallery</a></li>
+      <li><a href="https://www.chennaisuperkings.com/fanzone">Fan-Zone</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+        <h2>Welcome to the Den</h2>
+        <p>Join the pride of lions as we cheer for our champions! Get match updates, player stats, wallpapers, and more. Stay true to yelove!💛</p>
+        <h3>Team Highlights</h3>
+        <ul>
+            <li>5-time IPL Champions (2010, 2011, 2018, 2021, 2023)</li>
+            <li>Led by Captain Cool MS Dhoni</li>
+            <li>Home ground: 📍M. A. Chidambaram Stadium, Chennai</li>
+            <li>Known for loyal fanbase and iconic yellow jersey</li>
+        </ul>
+
+        <h3>Why Fans Love CSK</h3>
+        <p>
+            From thrilling last-over finishes to a strong core team that stands the test of time, CSK represents resilience and family. Join our fan community to relive glorious moments, celebrate your favorite players, and never miss an update!
+        </p>
+    </div>
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li><a href="https://youtu.be/b4OH3vBANa4?si=ypy-43toEvt9-pP4">MS Dhoni Tribute</a></li>
+        <li><a href="#">Hall of Fame</a></li>
+        <li><a href="https://shop.chennaisuperkings.com/">Buy CSK Merch</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Chennai Super Kings Fan Club | Whistle Podu!</p>
+  </footer>
+
+</body>
+</html>

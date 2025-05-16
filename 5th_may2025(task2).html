@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --bg-color: #ecf0f1;
+      --text-color: #2c3e50;
+      --font-family: 'Segoe UI', sans-serif;
+      --font-size: 16px;
+      --padding: 20px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, footer {
+      padding: var(--padding);
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      animation: colorFade 0.8s ease-in-out;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: var(--padding);
+      text-align: center;
+      animation: colorFade 0.8s ease-in-out;
+    }
+
+    button, label {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 20px;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Checkbox hidden */
+    #themeToggle {
+      display: none;
+    }
+
+    /* Apply Summer theme */
+    #themeToggle:checked ~ * {
+      --primary-color: #f39c12;
+      --secondary-color: #e67e22;
+      --bg-color: #fff3e0;
+      --text-color: #d35400;
+    }
+
+    /* Add animation to affected elements on theme toggle */
+    #themeToggle:checked ~ header,
+    #themeToggle:checked ~ nav,
+    #themeToggle:checked ~ section,
+    #themeToggle:checked ~ footer {
+      animation: colorFade 0.8s ease-in-out;
+    }
+
+    /* Keyframe for color transition simulation */
+    @keyframes colorFade {
+      0% {
+        filter: brightness(0.9);
+      }
+      50% {
+        filter: brightness(1.05);
+      }
+      100% {
+        filter: brightness(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle -->
+  <input type="checkbox" id="themeToggle" />
+  <label for="themeToggle" style="position: fixed; top: 10px; right: 10px;">Theme Switcher</label>
+
+  <header>
+    <h1>Ash Inc</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome to Our Site</h2>
+    <p>Enjoy our amazing products with seasonal themes!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ash Inc</p>
+  </footer>
+
+</body>
+</html>

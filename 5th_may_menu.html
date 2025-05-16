@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu – Bean Haven Coffee</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      color: #3e2c1c;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .menu-section {
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #6f4e37;
+    }
+    .menu-grid {
+      display: grid;
+      
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .item {
+      background-color: #fbe9dc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bean Haven Coffee</h1>
+    <p>Menu</p>
+  </header>
+
+  <section class="menu-section">
+    <h2>Our Full Menu</h2>
+    <div class="menu-grid">
+      <div class="item"><h3>Espresso</h3><p>Strong and bold – ₹90</p></div>
+      <div class="item"><h3>Latte</h3><p>Silky smooth – ₹120</p></div>
+      <div class="item"><h3>Cappuccino</h3><p>Classic and foamy – ₹110</p></div>
+      <div class="item"><h3>Mocha</h3><p>Chocolate delight – ₹130</p></div>
+      <div class="item"><h3>Caramel Macchiato</h3><p>Sweet & creamy – ₹140</p></div>
+      <div class="item"><h3>Cold Brew</h3><p>Chilled & refreshing – ₹150</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Visit us at 123 Brew Street, Beanville</p>
+    <p>Open Daily: 7 AM – 9 PM</p>
+  </footer>
+</body>
+</html>
