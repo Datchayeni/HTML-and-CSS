@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+               <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Management</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: #f8f9fa;">
+        <div class="container mt-5" style="background-color: gray">
+            <div class="d-flex align-items-center">
+                <img src="https://i.pinimg.com/736x/73/2c/9b/732c9b7e4f0f5572e03286ca2213ab20.jpg" class="card-img-right rounded-circle p-3 mt-3 mb-3" width="150px" height="150px" alt="logo">
+                <h2 style="color: white;">Admin Dashboard</h2>
+            </div>
+        </div><br><br><br>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead style="background-color: #343a40;"class=text-white>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>E-mail</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ash</td>
+                            <td>23</td>
+                            <td>ashkecham@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#viewModal">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="viewModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Ash</p>
+                                                <p><strong>Age:</strong>23</p>
+                                                <p><strong>E-mail:</strong>ashkecham@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>Ashkecham@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Alexander Smith</td>
+                            <td>27</td>
+                            <td>alexander@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#view">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="view" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Alexander Smith</p>
+                                                <p><strong>Age:</strong>27</p>
+                                                <p><strong>E-mail:</strong>alexander@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>AlexanderSmith@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bella Morttei</td>
+                            <td>24</td>
+                            <td>bellamorttei@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Modal">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="Modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Bella</p>
+                                                <p><strong>Age:</strong>24</p>
+                                                <p><strong>E-mail:</strong>bellamorttei@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>BellaMorttei@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dwan</td>
+                            <td>25</td>
+                            <td>dwan@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Mod">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="Mod" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Dwan</p>
+                                                <p><strong>Age:</strong>25</p>
+                                                <p><strong>E-mail:</strong>dwan@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>Dwan@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lia</td>
+                            <td>30</td>
+                            <td>lia@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#lili">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="lili" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Lia</p>
+                                                <p><strong>Age:</strong>30</p>
+                                                <p><strong>E-mail:</strong>lia@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>Lia@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Satoshi</td>
+                            <td>29</td>
+                            <td>satoshi@gmail.com</td>
+                            <td>
+                                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#wiwi">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    <span class="glyphicon glyphicon-edit"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+
+                                <div id="wiwi" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Details</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Name:</strong>Satoshi</p>
+                                                <p><strong>Age:</strong>29</p>
+                                                <p><strong>E-mail:</strong>satoshi@gmail.com</p>
+                                                <p><strong>Log-in id:</strong>Satoshi@123<span class="glyphicon glyphicon-log-in"></span></p>
+                                                <p><strong>Log-out:</strong><span class="glyphicon glyphicon-log-out"></span></p>
+                                                <strong>Stay Tuned<span class="glyphicon glyphicon-bell"></span></strong>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-primary mb-3 bg-success"> Add New User</button>
+        </div>
+    </body>
+</html>

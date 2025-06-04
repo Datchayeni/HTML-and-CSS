@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Price Filter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>Products costing more than Rs.50</h3>
+        <ul id="productList"></ul>
+        <p id="totalCount"></p>
+
+        <script>
+            const products = [
+            { name: "Pen", price: 20 },
+            { name: "Notebook", price: 55 },
+            { name: "Bag", price: 200 },
+            { name: "Eraser", price: 10 },
+            { name: "Calculator", price: 150 }
+            ];
+
+            let count = 0;
+            let listHTML = "";
+
+            for (let i = 0; i < products.length; i++) {
+            if (products[i].price > 50) {
+                count++;
+                listHTML += `<li>${products[i].name}</li>`;
+            }
+            }
+
+            document.getElementById("productList").innerHTML = listHTML;
+
+            document.getElementById("totalCount").innerHTML = `Total products costing more than Rs.50<br> Product count ${count}`;
+        </script>
+    </body>
+</html>

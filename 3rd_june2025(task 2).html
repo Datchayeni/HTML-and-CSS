@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Destination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #destination {
+            font-family: Forte;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        #travelImage {
+            width: 600px;
+            height: 300px;
+        }
+        .center-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+          <h1 class="text-center">Explore a Travel Destination</h1>
+
+            <p id="destination" class="text-center mx-5">Click the button to reveal a travel destination!</p>
+            <img id="travelImage" class="center-img" src="https://images.hola.com/imagenes/viajes/20220609211379/que-hacer-en-zurich-en-dos-dias/1-99-67/gettyimages-1267692130-t.jpg" alt="Travel" />
+            
+            <br><br>
+            <button type="button" class="btn btn-primary center-img" onclick="showDestination()" id="btn">Show Destination</button>
+
+            <script>
+                function showDestination() {
+                    document.getElementById("destination").innerText = "Zurich is the largest city in Switzerland, known for its blend of historical charm and modern sophistication. It sits on the northwestern tip of Lake Zurich and is surrounded by the Swiss Alps. Zurich is a major global financial hub but also rich in culture, history, and natural beauty. The city is clean, safe, and well-organized, offering both serenity and vibrant city life.";
+                    document.getElementById("travelImage").src = "https://travel2next.com/wp-content/uploads/zurich.jpg";
+                }
+            </script>
+</body>
+</html>

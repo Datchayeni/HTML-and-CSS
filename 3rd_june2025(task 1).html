@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store Discount Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #fff8f0;
+            font-family: Arial;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #b58863;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        #summary {
+            margin-top: 20px;
+            background-color: #8b5e3c;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Online Store Discount Calculator</h2>
+        <label>Customer Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" class="">
+        <br><br>
+        <label>Cart Total ($):</label>
+        <input type="number" id="cartTotal" placeholder="Enter cart total">
+        <br><br>
+        <button type="button" class="btn btn-success p-3" onclick="calculateDiscount()">Calculate Final Price</button>
+
+        <div class="summary" id="summary">
+            <!-- Discount summary will appear here -->
+        </div>
+    </div>
+
+    <script>
+        function calculateDiscount() {
+            const customerName = document.getElementById("customerName").value;
+            const cartTotal = parseFloat(document.getElementById("cartTotal").value);
+            let discount = 0;
+
+            if (cartTotal >= 100) {
+                discount = 0.20;
+            } else if (cartTotal >= 50) {
+                discount = 0.10;
+            }
+
+            const finalPrice = cartTotal - (cartTotal * discount);
+
+            document.getElementById("summary").innerHTML = `
+                <strong>Customer Name:</strong> ${customerName} <br>
+                <strong>Cart Total:</strong> $${cartTotal.toFixed(2)} <br>
+                <strong>Discount Applied:</strong> ${discount * 100}% <br>
+                <strong>Final Price:</strong> $${finalPrice.toFixed(2)}
+            `;
+        }
+    </script>
+</body>
+</html>
