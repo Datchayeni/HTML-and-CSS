@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Components</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card bg-success" style="width: 500px;">
+                <div class="card-header">Profile Card</div>
+                    <img src="https://i.pinimg.com/736x/91/4a/32/914a326fb1f9d42647be35ecd49c7905.jpg" width="200" height="200" class="card-img-top" alt="img1">
+                        <div class="card-body">
+                            <h2 class="card-title bg-danger">Aria DeLuca</h2>
+                            <p class="card-text bg-warning">Founder & CEO Aria's book world</p>
+                            <a href="#" class="btn btn-success">Click to know more!!!</a>
+                        </div>
+                        <div class="card-footer bg-info">Posted now!!</div>
+            </div>
+            <h2>List Group</h2>
+            <ul class="list-group">
+                <li class="list-group-item active">Hot Chocolate<span class="badge me-2">Rs.100</span></li>
+                <li class="list-group-item disabled">Iced Matcha<span class="badge">Rs.150</span></li>
+                <li class="list-group-item list-group-item-danger">Rasberry coli<span class="badge">Rs.70</span></li>
+                <li class="list-group-item list-group-item-success">Espresso<span class="badge">Rs.100</span></li>
+                <li class="list-group-item">Iced Americano<span class="badge">Rs.170</span></li>
+            </ul>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h3 class="list-group-item-heading">List Heading</h3>
+                    <p class="list-group-item-text">Text inside</p>
+                </a>
+            </div>
+            <h2>Navigation Bar</h2>
+            <nav class="navbar navbar-inverse"><!--Default bright screen , navbar navbar-default navbar-fixed-bottom-->
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a herf="#" class="navbar-brand">Aria's Book world</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Combs</a></li>
+                        <li><a href="#">Historical</a></li>
+                        <li><a href="#">Fan Fiction</a></li>
+                        <li class="dropdown"><a href="#" calss="dropdown-toggle" data-toggle="dropdown">Manga<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Naruto</a></li>
+                                <li><a href="#">Attack on titan</a></li>
+                                <li><a href="#">Boruto</a></li>
+                                <li><a href="#">Bleach</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-warning navbar-btn">close</button>
+                </div>
+            </nav>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Aria's Book world</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="NavBar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Combs</a></li>
+                            <li><a href="#">Historical</a></li>
+                            <li><a href="#">Fan Fiction</a></li>
+                            <li><a href=#>Manga</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h2>Pagination</h2>
+            <ul class="pagination">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+            <h2>Breadcrumb</h2>
+            <ul class="breadcrumb">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Combs</a></li>
+                <li><a href="#">Historical</a></li>
+                <li><a href="#">Fan Fiction</a></li>
+                <li><a href=#>Manga</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

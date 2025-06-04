@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            :root{
+                --Gainsboro:#DCDCDC;
+                --LightSalmon:#ffa07a;/*global variable*/
+            }
+            body{
+                background-color: var(--Gainsboro);
+            }
+            h3{
+                --LightSalmon:#1E90FF;/*overridding the global variable with local variable*/
+                border: 2px solid var(--LightSalmon);
+            }
+            button{
+                --button-color:#FF00FF;
+                --button-border:#000000;
+                background-color: var(--button-color);
+                border:2px solid var(--button-border)
+            }
+            @media screen and (min-width:450px) {
+                .container{
+                    --fontsize:40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Simple variable Example</h3>
+            <p>Do you want to agree?</p>
+           <p>
+            <button>Yes</button>
+            <button>No</button>
+           </p> 
+        </div>
+    </body>
+</html>

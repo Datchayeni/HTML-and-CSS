@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Scripts Operators</title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <button type="button" onclick="checkAccess()">Check Access</button>
+        <button type="button" onclick="checkDay()">Check Day</button>
+        <button type="button" onclick="checkDate()">Check Date</button>
+
+        <label for="m1">Enter first number</label>
+        <input type="number" id="m1" placeholder="1st number"><br><br>
+
+        <label for="m2">Enter second number</label>
+        <input type="number" id="m2" placeholder="2nd number"><br><br>
+
+        <label for="o1">Enter operation</label>
+        <input type="text" id="o1" placeholder="+ / -"><br><br>
+
+        <p id="p2"></p><br>
+
+        <button type="button" onclick="calculate()">Get calculation</button>
+
+        <button type="button" onclick="dic()">Get info</button>
+        <script>
+            function checkAccess(){
+                let age=18;
+                let allowed = true; // && and || or !() not
+                if(age>=18 && allowed){
+                    document.getElementById("p1").innerText="Access granted";
+                }
+                else{
+                    document.getElementById("p1").innerText="Access denied";
+                }
+                //dcument.write(typeof allowed);
+            }
+            function checkDay(){
+                let day;
+                let date=new Date().getDay();
+                switch(date){
+                    case 0:
+                        day="Sunday";
+                        break;
+                    case 1:
+                        day="Monday";
+                        break;
+                    case 2:
+                        day="Tuesday";
+                        break;
+                    case 3:
+                        day="Wednesday";
+                        break;
+                    case 4:
+                        day="Thursday";
+                        break;
+                    case 5:
+                        day="Friday";
+                        break;
+                    case 6:
+                        day="Saturday";
+                        break;
+                }
+                document.getElementById("p1").innerHTML="today is:"+day
+            }
+            function checkDate(){
+                let n1= parseInt(prompt("Enter a number:"));
+                let n2= parseInt(prompt("Enter another number:"));
+                let operation=prompt("Enter the operation");
+                let result;
+                switch(operation){
+                    case "+":
+                        result=n1+n2;
+                        break;
+                    case "-":
+                        result=n1-n2;
+                        break;
+                    case "*":
+                        result=n1*n2;
+                        break;
+                    default:
+                        result="Invalid"
+                }
+                document.getElementById("p1").innerHTML="answer is:"+result
+            }
+            function calculate() {
+            let m1 = parseInt(document.getElementById("m1").value);
+            let m2 = parseInt(document.getElementById("m2").value);
+            let op = document.getElementById("o1").value.trim();
+            let ans;
+                switch (op) {
+                    case '+':
+                        ans = m1 + m2;
+                        break;
+                    case '-':
+                        ans = m1 - m2;
+                        break;
+                    case '*':
+                        ans = m1 * m2;
+                        break;
+                    case '/':
+                        ans = m2 !== 0 ? m1 / m2 : "Cannot divide by zero.";
+                        break;
+                    default:
+                        ans = "Invalid Operation";
+                }
+                document.getElementById("p2").innerHTML = "Answer Result: " + ans;
+            }
+           function dic() {
+                let student = {'name': "Aria", 'age': 18};
+                for (let key in student) {
+                    document.write(key + ": " + student[key] + "<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

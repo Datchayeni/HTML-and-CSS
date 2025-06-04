@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Example</title>
+        <!--for external js save this script as .js flie inside the <script src="filename.js">-->
+        <script>
+            function light_ON(){
+                document.getElementById('imgon').src='https://i.pinimg.com/736x/ce/4f/de/ce4fde05eaff22559c9d7014c78cd0a4.jpg';
+            }
+            function light_Off(){
+                document.getElementById('imgon').src='https://i.pinimg.com/736x/87/19/81/87198119df73040e32081e2c6c2b8a05.jpg';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Javascript simple example</h1>
+        <p id="p1">This content will be changed by javascript</p>
+        <button type="button" onclick='document.getElementById("p1").innerHTML="Content changed"'>Click me</button>
+        <h1>Light On and Off Example</h1>
+        <button type="button" onclick="document.getElementById('imgoff').src='https://www.w3schools.com/js/pic_bulbon.gif'">On</button>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" width="400" height="300" id="imgoff">
+        <button type="button" onclick="document.getElementById('imgoff').src='https://www.w3schools.com/js/pic_bulboff.gif'">Off</button>
+        <br><br>
+        <button type="button" onclick="light_ON()">On</button>
+        <img src="https://i.pinimg.com/736x/87/19/81/87198119df73040e32081e2c6c2b8a05.jpg" id="imgon" width="400" height="300">
+        <button type="button" onclick="light_Off()">Off</button>
+        <h2>Document.write example</h2>
+        <button type="button" onclick="document.write('BTS')">Click me</button>
+        <script>
+            window.alert("Hiiiiiiiiii")
+        </script>
+    </body>
+</html>
