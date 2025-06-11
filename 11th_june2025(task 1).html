@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DJ Keyboard</title>
+        <style>
+            body {
+                background: #111;
+                color: #fff;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            .key {
+                display: inline-block;
+                margin: 20px;
+                font-size: 24px;
+                padding: 20px 40px;
+                background: #333;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #555;
+                cursor: pointer;
+            }
+
+            .sound-name {
+                margin-top: 40px;
+                font-size: 28px;
+                color: deeppink;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>🎧 Virtual DJ Keyboard 🎧</h1>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+
+        <div class="sound-name" id="soundName">Press A, S, D or F</div>
+
+        <script>
+            document.addEventListener('keydown', function(event) {
+                const key = event.key.toUpperCase();
+                let file = '';
+                let name = '';
+
+                switch (key) {
+                    case 'A':
+                        file = 'sounds/stillwithyou.mp3';
+                        name = 'Jung Kook - Still With You';
+                        break;
+                    case 'S':
+                        file = 'sounds/snooze.m4a';
+                        name = 'Snooze - Agust D Ft. Ryuichi Sakamoto';
+                        break;
+                    case 'D':
+                        file = 'sounds/justoneday.mp3';
+                        name = 'BTS - Just One Day';
+                        break;
+                    case 'F':
+                        file = 'sounds/friends.m4a';
+                        name = 'V - FRI(END)S';
+                        break;
+                    default:
+                        document.getElementById('soundName').textContent = 'Please press a valid key';
+                        return;
+                }
+
+                const audio = new Audio(file);
+                audio.play();
+                document.getElementById('soundName').textContent = `🎶 ${name}`;
+            });
+        </script>
+
+    </body>
+</html>
